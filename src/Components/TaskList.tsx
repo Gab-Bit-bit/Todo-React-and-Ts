@@ -1,12 +1,25 @@
 import React from 'react'
 
-type Props = {}
+// CSS
+import styles from './TaskList.module.css'
 
-function TaskList({}: Props) {
+// Interfaces
+import { ITask } from '../Interfaces/Task'
+
+
+interface Props{
+  taskList: ITask[]
+}
+
+function TaskList({taskList}: Props) {
   return (
-    <div>
-        <p>Lista de tarefas</p>
-    </div>
+    <>
+      {taskList.length > 0 ? (
+        <p>Tem tarefa cadastrada</p>
+      ):(
+        <p>Não tem tarefa cadastrada</p>
+      )} 
+    </>
   )
 }
 
