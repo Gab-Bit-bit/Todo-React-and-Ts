@@ -16,6 +16,7 @@
     color: #000;
     transition: .5s;
     cursor: pointer;
+    font-weight: bold;
 }
 .form [type = "submit"]:hover{
     background-color: #FFF;
